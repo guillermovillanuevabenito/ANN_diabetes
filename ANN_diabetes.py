@@ -1,3 +1,4 @@
+#%%
 import numpy as np
 import pandas as pd
 
@@ -9,10 +10,12 @@ from sklearn.model_selection import train_test_split
 
 import tensorflow as tf
 
+#%%
 # Load data
 data = pd.read_csv('diabetes.csv')
 data.head()
 
+#%%
 # Data summary
 data.describe()
 
@@ -64,3 +67,5 @@ y_pred = model_1.predict(X_test)
 test_loss, test_acc = model_1.evaluate(X_test, y_test)
 
 print('Accuracy = ', test_acc)
+
+# %%
